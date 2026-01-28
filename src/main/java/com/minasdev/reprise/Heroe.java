@@ -18,7 +18,7 @@ public class Heroe {
     public Heroe() {
         Faker faker = new Faker(); // Magia de la librería externa
 
-        // Generamos un nombre tipo "Gandalf" y un título de Juego de Tronos
+        // Generamos un nombre de personaje y título de Dune
         this.nombre = faker.dune().character();
         this.titulo = faker.dune().title();
 

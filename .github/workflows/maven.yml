@@ -1,0 +1,24 @@
+name: Java CI con Maven
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Paso 1: Descargar el código
+    - uses: actions/checkout@v6
+
+    # Paso 2:  Instalar el JDK
+    - uses: actions/setup-java@v5
+      with:
+        distribution: 'temurin' # See 'Supported distributions' for available options
+        java-version: '21'
+        
+    # Paso 3: Ejecutar Maven
+    - run: mvn clean package

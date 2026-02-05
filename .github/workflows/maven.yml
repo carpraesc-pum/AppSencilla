@@ -26,7 +26,7 @@ jobs:
     - name: Set up JDK 17
       uses: actions/setup-java@v4
       with:
-        java-version: '17'
+        java-version: '25'
         distribution: 'temurin'
         cache: maven # Esto hace que las descargas sean más rápidas después de la primera vez
     # Paso 3: Ejecutar Maven (Compilar y Testear)

@@ -32,6 +32,8 @@ public class Main {
 
             turno++;
             Thread.sleep(1000);
+
+            //CAMBIO TRIVIAL
         }
 
         // 4. Anunciar ganador
